@@ -1,1 +1,2 @@
-Image Processing subject lab programs
+Image Processing subject
+Laboratory programs
