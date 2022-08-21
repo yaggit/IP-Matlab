@@ -1,5 +1,7 @@
-%[file, path] = uigetfile('*.jpg');
-%[FileName,PathName] = uigetfile('*.m','Select the MATLAB code file');
+%uigetfile
+[file path] = uigetfile();
+fprintf('file path: %s\nfilename: %s\n',path,file);
+fprintf('92000103171 Yagnesh')
 
 %using size command
 a=imread('cameraman.tif');
