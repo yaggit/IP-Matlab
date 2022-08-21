@@ -55,4 +55,25 @@ g=imadjust(a,[0.5, 0.75],[0.6, 1],0.5);
 subplot(3,3,6);
 imshow(g);
 
+%graylevel
+i = imread('rice.png')
+s = i;
+subplot(1,2,1)
+imshow(i);
+title('original')
+
+subplot(1,2,2)
+for row=1:size (i,1)
+    for col=1:size(i,2)
+        if(i(row,col)>100) && (i(row,col)<200)
+            s(row,col)=255;
+        else
+            s(row,col) = i(row,col);
+        end
+    end
+end
+imshow(s)
+title('output');
+disp('920000103171 Yagnesh')
+            
 
